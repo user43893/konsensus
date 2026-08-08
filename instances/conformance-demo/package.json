@@ -1,0 +1,21 @@
+{
+  "name": "@konsensus/instance-conformance-demo",
+  "version": "0.1.0",
+  "description": "Deployable synthetic Aotearoa instance for the jurisdiction-neutral platform shell",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./frontend": "./src/frontend.ts",
+    "./public-data": "./src/public-data.ts"
+  },
+  "scripts": {
+    "test": "bun test src"
+  },
+  "dependencies": {
+    "@konsensus/instance-profile": "workspace:*",
+    "@konsensus/proof": "workspace:*",
+    "@konsensus/public-api": "workspace:*"
+  }
+}

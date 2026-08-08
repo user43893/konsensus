@@ -1,0 +1,122 @@
+{
+  "schema": "standalone-publication-provenance-current",
+  "sourceRevision": {
+    "algorithm": "git-commit-sha1",
+    "commit": "6277f328d8c8b539d21eae6e64471078acae7bbd",
+    "projection": "country-agnostic-current-v3"
+  },
+  "repository": {
+    "id": "konsensus",
+    "releaseBoundary": "current-v3-only"
+  },
+  "history": {
+    "mode": "parentless-standalone",
+    "expectedRootCount": 1
+  },
+  "rootPackage": {
+    "name": "konsensus",
+    "version": "0.1.0",
+    "private": true,
+    "workspaces": ["apps/*", "instances/*", "packages/*"]
+  },
+  "topology": {
+    "topLevelPaths": [
+      ".github",
+      ".gitignore",
+      ".gitleaks.toml",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "DEPENDENCY-LICENSE-OVERRIDES.json",
+      "LICENSE",
+      "LICENSE-DATA.md",
+      "NOTICE.md",
+      "PUBLICATION-BOUNDARY.json",
+      "PUBLICATION-HARDENING.json",
+      "PUBLICATION-PROVENANCE.json",
+      "README.md",
+      "SECURITY.md",
+      "apps",
+      "biome.json",
+      "bun.lock",
+      "instances",
+      "package.json",
+      "packages",
+      "scripts",
+      "tsconfig.json"
+    ],
+    "requiredPaths": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/post-public-hardening.yml",
+      ".github/workflows/secret-scan.yml",
+      ".gitleaks.toml",
+      "LICENSE",
+      "PUBLICATION-BOUNDARY.json",
+      "PUBLICATION-HARDENING.json",
+      "README.md",
+      "apps/platform-web/app/api/eligibility-directory/[publicVoterId]/route.ts",
+      "apps/platform-web/app/api/eligibility-directory/checkpoints/route.ts",
+      "apps/platform-web/app/api/eligibility-directory/route.ts",
+      "apps/platform-web/app/api/questions/[id]/vote-checkpoint/route.ts",
+      "apps/platform-web/package.json",
+      "instances/conformance-demo/package.json",
+      "package.json",
+      "packages/instance-profile/package.json",
+      "packages/proof/package.json",
+      "packages/proof/src/eligibility-directory-v3.ts",
+      "packages/proof/src/question-vote-log-v3.ts",
+      "packages/public-api/package.json",
+      "scripts/repository/harden-publication.test.ts",
+      "scripts/repository/harden-publication.ts",
+      "scripts/repository/release-check.sh",
+      "scripts/repository/resolve-scanner-release.sh",
+      "scripts/repository/resolve-scanner-release.test.ts",
+      "scripts/repository/run-gitleaks.ts",
+      "scripts/repository/verify-public-boundary.ts",
+      "scripts/repository/verify-publication-topology.ts"
+    ],
+    "forbiddenPathPrefixes": [
+      "apps/confidential-email-verifier",
+      "apps/web",
+      "infrastructure",
+      "packages/db",
+      "packages/domain"
+    ],
+    "workspacePackages": [
+      {
+        "path": "apps/platform-web",
+        "name": "@konsensus/platform-web",
+        "version": "0.1.0",
+        "private": true
+      },
+      {
+        "path": "instances/conformance-demo",
+        "name": "@konsensus/instance-conformance-demo",
+        "version": "0.1.0",
+        "private": true
+      },
+      {
+        "path": "packages/instance-profile",
+        "name": "@konsensus/instance-profile",
+        "version": "0.1.0",
+        "private": true
+      },
+      {
+        "path": "packages/proof",
+        "name": "@konsensus/proof",
+        "version": "0.1.0",
+        "private": true
+      },
+      {
+        "path": "packages/public-api",
+        "name": "@konsensus/public-api",
+        "version": "0.1.0",
+        "private": true
+      }
+    ]
+  },
+  "sourceTree": {
+    "algorithm": "sha256-path-length-content-current",
+    "excludes": ["PUBLICATION-PROVENANCE.json"],
+    "sha256": "9354ec9fd5067af06d2119498de405f7e64b1d2177c1f0d67458acf501a4e118"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@konsensus/platform-web",
+  "version": "0.1.0",
+  "description": "Deployable jurisdiction-neutral read-only frontend for qualified-opinion public APIs",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "bun test ./lib ./tests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "check": "bun run test && bun run typecheck && bun run build"
+  },
+  "dependencies": {
+    "@konsensus/instance-conformance-demo": "workspace:*",
+    "@konsensus/instance-profile": "workspace:*",
+    "@konsensus/public-api": "workspace:*",
+    "next": "^15.5.21",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.9",
+    "@types/node": "^22.13.11",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2"
+  }
+}

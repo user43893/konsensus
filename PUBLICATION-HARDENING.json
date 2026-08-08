@@ -1,0 +1,78 @@
+{
+  "schema": "publication-repository-hardening.current",
+  "credential": {
+    "secretName": "PUBLICATION_HARDENING_TOKEN"
+  },
+  "repository": {
+    "owner": "konsensus-platform",
+    "ownerId": 292473859,
+    "name": "konsensus",
+    "repositoryId": 1319013036,
+    "defaultBranch": "main",
+    "visibility": "public",
+    "description": "White-label frontend for source-linked, verifiable qualified-opinion indexes",
+    "homepage": "https://github.com/konsensus-platform/konsensus",
+    "topics": [
+      "api-client",
+      "auditable-systems",
+      "open-source",
+      "transparency",
+      "white-label"
+    ],
+    "settings": {
+      "allowMergeCommit": false,
+      "allowRebaseMerge": false,
+      "allowSquashMerge": true,
+      "deleteBranchOnMerge": true,
+      "hasDiscussions": false,
+      "hasIssues": true,
+      "hasProjects": false,
+      "hasWiki": false
+    }
+  },
+  "actions": {
+    "enabled": true,
+    "allowedActions": "selected",
+    "shaPinningRequired": true,
+    "defaultWorkflowPermissions": "read",
+    "canApprovePullRequestReviews": false,
+    "githubOwnedAllowed": false,
+    "verifiedAllowed": false,
+    "patternsAllowed": ["actions/checkout@*", "oven-sh/setup-bun@*"]
+  },
+  "branchProtection": {
+    "branch": "main",
+    "requiredStatusChecks": [
+      {
+        "context": "checks",
+        "appId": 15368
+      },
+      {
+        "context": "gitleaks",
+        "appId": 15368
+      }
+    ],
+    "strictStatusChecks": true,
+    "enforceAdmins": true,
+    "requirePullRequest": true,
+    "requiredApprovingReviewCount": 0,
+    "dismissStaleReviews": true,
+    "requireCodeOwnerReviews": false,
+    "requireLastPushApproval": false,
+    "requireConversationResolution": true,
+    "requireLinearHistory": true,
+    "requireSignedCommits": true,
+    "allowForcePushes": false,
+    "allowDeletions": false,
+    "blockCreations": false
+  },
+  "security": {
+    "dependencyGraph": true,
+    "vulnerabilityAlerts": true,
+    "automatedSecurityFixes": true,
+    "privateVulnerabilityReporting": true,
+    "advancedSecurity": true,
+    "secretScanning": true,
+    "secretScanningPushProtection": true
+  }
+}

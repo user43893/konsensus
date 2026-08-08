@@ -1,0 +1,21 @@
+{
+  "name": "@konsensus/public-api",
+  "version": "0.1.0",
+  "description": "Current jurisdiction-neutral public read contract and fetch client for qualified-opinion instances",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./schemas": "./src/schemas.ts"
+  },
+  "scripts": {
+    "test": "bun test src",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@konsensus/proof": "workspace:*",
+    "zod": "^3.24.2"
+  }
+}

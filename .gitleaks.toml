@@ -1,0 +1,4 @@
+title = "Clean-history publication repository secret scanning"
+
+[extend]
+useDefault = true

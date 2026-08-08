@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "paths": {
+      "@konsensus/instance-conformance-demo": [
+        "instances/conformance-demo/src/index.ts"
+      ],
+      "@konsensus/instance-conformance-demo/frontend": [
+        "instances/conformance-demo/src/frontend.ts"
+      ],
+      "@konsensus/instance-conformance-demo/public-data": [
+        "instances/conformance-demo/src/public-data.ts"
+      ],
+      "@konsensus/instance-profile": ["packages/instance-profile/src/index.ts"],
+      "@konsensus/proof": ["packages/proof/src/index.ts"],
+      "@konsensus/public-api": ["packages/public-api/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022"
+  }
+}

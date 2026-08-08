@@ -1,0 +1,14 @@
+{
+  "name": "@konsensus/instance-profile",
+  "version": "0.1.0",
+  "description": "Validated and content-addressed qualified-opinion instance policy",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@konsensus/proof": "workspace:*"
+  }
+}

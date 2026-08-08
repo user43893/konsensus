@@ -1,0 +1,16 @@
+{
+  "name": "@konsensus/proof",
+  "version": "0.1.0",
+  "description": "Canonical qualified-opinion protocol, signature, Merkle, and tally primitives",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node.ts"
+  },
+  "scripts": {
+    "test": "bun test src",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
